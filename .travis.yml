@@ -6,10 +6,10 @@ node_js:
 before_script:
   npm install
 deploy:
-          provider: heroku
+  provider: heroku
 api_key:
   secure: "oal96LPd6ukXQPCwLUDuVH9ynTyghezaBp/z4D5yqAuf9308sLdnBjWuN7z/ZRqr4yskW59vBFmCNBucIcHIyPemLA35pnbGFe2vkSqB5SB5cqLZKxooMvfU4KeDSecnCr/kEnA9c+YL/Mr1lAxVey4N3XGRDoTn9YvsT1exd+x6K9GJnyYCknok5bHgkFD9h68ON5bWye0DK2HNtrEvSbppalcHiBEG+tKZ7C0BKOdquwBwTN2SWKIwX2Wn/VL3jz4Zii9SUGzLatSU4k7Iy2zayE40hSwrwvJ2WrlpfYLrAW5m35CTmVJovW1GiiNP+sWzSV4Fpv7Jy5v7IhyojWxZO0RVjt+hm3p7y5kfhXroeS6VKiWuPM+Ihwd8C9YxGqb5gahBuUgtvkKrRBeUHru5sRStBwBqkfFN1rXSCJK8S7ubd4YVIETwdmVx7+TPmNWWXNrIJ4cJktXfcgLcuiUlKDxBkgY0Ysh3t9j8SqVW/diz7+0gxZWwbgGVnvefcG708nh7RnaTk/HBcfLTQqVAfwmLdrLkfBURVgrBTPbVmXHhGYzONyORC7G6xKkyliyYQWyi6m/gakMlDDmtpBKFyCF6mxEiDil9aPbPAiN5cEwA3Ro9+qAsCsJO2XqSBN8+D+0+iksG01m3QoCRQV6QN5NyVgW4j7eDWBqRWYU="
-
+  app: prueba-travis-herouku
 script:
   - npm run test
   - echo "Esto es una prueba de travis"
