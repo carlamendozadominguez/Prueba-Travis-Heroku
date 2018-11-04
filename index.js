@@ -1,7 +1,11 @@
-console.log('Hello world');
+const express = require("express");
+const app = express();
+const PORT = process.env.PORT || 5000;
 
-function sum(number1, number2) {
-    return number1 + number2;
-}
+app.get('/', function (req, res) {
+    res.send('<iframe src="https://giphy.com/embed/Efpfk11XWXwTSKqgV2" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>');
+});
 
-module.exports = sum;
+app.listen(PORT, function () {
+    console.log('Server is running, port ' + PORT);
+});
